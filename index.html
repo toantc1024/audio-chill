@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="./img/jacinto-1.jpg" alt="Album Art">
+        </div>
+        <h2 id="title">Electric Chill Machine</h2>
+        <h3 id="artist">Jacinto - Toan Reserved</h3>
+        <audio src="music/jacinto-1.mp3" preload='metadata'></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">00:00</span>
+                <span id="duration">02:06</span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <a class="controls"  id="prev">
+                <i class="fas fa-backward" title="Previous"></i>
+            </a>
+            <a class="controls main-button" id="play">
+                <i class="fas fa-play " title="Play"></i>
+            </a>
+            <a class="controls" id="next">
+                <i class="fas fa-forward"  title="Next"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
